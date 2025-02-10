@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/portfolio_favicon.png">
     <title>Aditya's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquries.css">
@@ -47,21 +48,21 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Aditya Kapadne profile picture">
+            <img src="./assets/profile_photo.png" alt="Aditya Kapadne profile picture">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Hello, I'm</h1>
             <h1 class="title">Aditya Kapadne</h1>
-            <p class="section__text__p2">Software Engineer<br/>Persistent Systems</p>
+            <p class="section__text__p2">Senior Software Engineer<br/>Persistent Systems</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Aditya_Kapadne.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="linkedin-profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/aditya-kapadne-301b38219'" target="_blank">
+                class="icon linkedin" onclick="window.open('https://www.linkedin.com/in/aditya-kapadne-301b38219', '_blank')">
                 <img src="./assets/github.png" alt="GitHub-profile"
-                class="icon" onclick="location.href='https://github.com/AdityaKapadne15'" target="_blank">
+                class="icon github" onclick="window.open('https://github.com/AdityaKapadne15', '_blank')">
             </div>
         </div>
     </section>
@@ -71,17 +72,17 @@
         <h1 class="title">About Me</h1>
         </div>
         <div class="section-container">
-            <div class="section__pic-container">
+            <!-- <div class="section__pic-container">
                 <img src="./assets/about-pic.png" alt="profile-picture"
                 class="about-pic">
-            </div>
+            </div> -->
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Experience icon"
                         class="icon">
                         <h3>Experience</h3>
-                        <p>1.5+ Years <br/>Data Analyst & Frontend Developer<br/><b>Persistent Systems Limited</b></p>
+                        <p>Experience: <span id="experience-time">1.5+ years</span> <br/>Data Analyst & Frontend Developer<br/><b>Persistent Systems Limited</b></p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education icon"
@@ -91,7 +92,7 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Hello, I'm a dedicated software engineer with a passion for full-stack solutions and data analytics. Over the past 1.5 years, I have embraced the roles of a data analyst and full-stack developer. My journey in this dynamic field has allowed me to explore complex datasets, extract meaningful insights, and create robust applications that bridge the gap between raw data and user-friendly interfaces. With a keen eye for detail and a knack for problem-solving, I thrive in the fast-paced environment of software engineering, to meet the demands of modern technology.</p>
+                    <p>Hello, I'm a dedicated Senior Software Engineer with a passion for full-stack solutions and data analytics. Over the past <span id="experience-time">1.5+ years</span>, I have embraced the roles of a data analyst and full-stack developer. My journey in this dynamic field has allowed me to explore complex datasets, extract meaningful insights, and create robust applications that bridge the gap between raw data and user-friendly interfaces. With a keen eye for detail and a knack for problem-solving, I thrive in the fast-paced environment of software engineering, to meet the demands of modern technology.</p>
                 </div>
             </div>
         </div>
@@ -237,41 +238,41 @@
             <p class="section__text__p1">Browse My Recent</p>
             <h1 class="title">Projects</h1>
         </div>
-        <div class="experience-details-container">
+        <div class="experience-details-container project-tabs">
             <div class="about-containers">
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-1.png" alt="Project 1"
+                    <img src="./assets/hospital_bg.png" alt="Hospital Management System"
                     class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">Project One
+                <h2 class="experience-sub-title project-title">Hospital Management System
                 </h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AdityaKapadne15'" target="_blank">
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/AdityaKapadne15/hospital-management-system', '_blank')">
                     GitHub
                     </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AdityaKapadne15'" target="_blank">
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('https://adityakapadne15.github.io/hospital-management-system/', '_blank')">
                     Live Demo
                     </button>
                 </div>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-2.png" alt="Project 1"
+                    <img src="./assets/movie_bg.png" alt="Movie Recommendation App"
                     class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">Project Two
+                <h2 class="experience-sub-title project-title">Movie Recommendation App
                 </h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AdityaKapadne15'" target="_blank">
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/AdityaKapadne15/movie-recommendation-app')">
                     GitHub
                     </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AdityaKapadne15'" target="_blank">
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('https://adityakapadne15.github.io/movie-recommendation-app')">
                     Live Demo
                     </button>
                 </div>
             </div>
-            <div class="details-container color-container">
+            <!-- <div class="details-container color-container">
                 <div class="article-container">
                     <img src="./assets/project-3.png" alt="Project 1"
                     class="project-img">
@@ -286,7 +287,7 @@
                     Live Demo
                     </button>
                 </div>
-            </div>
+            </div> -->
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon"
@@ -304,7 +305,7 @@
                 <p><a href="mailto:adityakapadne149@gmail.com" target=”_blank”>adityakapadne149@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin Icon"
+                <img src="./assets/linkedin_dark.png" alt="linkedin Icon"
                 class="icon contact-icon">
                 <p><a href="https://www.linkedin.com/in/aditya-kapadne-301b38219" target=”_blank”>LinkedIn</a></p>
             </div>
@@ -318,10 +319,14 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul>  
+                    <li>
+                        <img src="./assets/arrow_up.png" alt="Arrow icon"
+                        class="icon arrow-footer" onclick="location.href='./#profile'">
+                    </li>
+                </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2023 Aditya Kapadne. All Rights Reserved.</p>
+        <p>Copyright &#169; 2025 Aditya Kapadne. All Rights Reserved.</p>
     </footer>
     <script src="script.js" ></script>
 </body>

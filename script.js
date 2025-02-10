@@ -38,6 +38,17 @@ if (isPageReloaded) {
 }
 */
 
+// Create the blob dynamically
+const blob = document.createElement("div");
+blob.classList.add("blob");
+document.body.appendChild(blob);
+
+document.addEventListener("mousemove", (e) => {
+    // Adjusting position correctly
+    blob.style.left = `${e.clientX - 150}px`; // Centering blob relative to cursor
+    blob.style.top = `${e.clientY - 150}px`;
+});
+
 
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-header');
@@ -68,4 +79,38 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     })
 })
+
+function updateExperience() {
+  const startDate = new Date(2022, 2); // Feb 2022
+  const currentDate = new Date();
+
+  let experienceYears = currentDate.getFullYear() - startDate.getFullYear();
+  let experienceMonths = currentDate.getMonth() - startDate.getMonth();
+
+  if (experienceMonths < 0) {
+      experienceYears--;
+      experienceMonths += 12;
+  }
+
+  let experienceText = `${experienceYears}+ years`;
+  if (experienceMonths > 0) {
+      experienceText = `${experienceYears}.${experienceMonths}+ years`;
+  }
+
+  // Select all elements with the ID 'experience-time'
+  const experienceElements = document.querySelectorAll("#experience-time");
+
+  if (experienceElements.length > 0) {
+      experienceElements.forEach(el => el.textContent = experienceText);
+  } else {
+      console.error("No elements found with ID 'experience-time'");
+  }
+}
+
+// Run the function when the page loads
+document.addEventListener("DOMContentLoaded", updateExperience);
+
+
+
+
 
