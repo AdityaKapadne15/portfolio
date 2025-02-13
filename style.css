@@ -180,6 +180,7 @@ a:hover{
     justify-content: space-between;
     height: 24px;
     width: 30px;
+    margin-right: -2rem;
     cursor: pointer;
 }
 
@@ -542,7 +543,7 @@ article .icon{
     color: whitesmoke;
 }
 .project-btn{
-    color: black;
+    color: whitesmoke;
     background-color: rgb(255, 255, 255);
 }
 
@@ -602,7 +603,15 @@ article .icon{
 }
 
 /*footer*/
-
+.footer-div{
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 0 -50px;
+    padding: 30px 50px;
+    background-color: #2b0c46;
+}
 footer{
     height: 26vh;
     margin:0 1rem;
@@ -610,4 +619,5 @@ footer{
 
 footer p{
     text-align: center;
+    padding-top: 20px;
 }

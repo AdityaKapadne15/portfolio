@@ -49,6 +49,13 @@
     .about-containers{
         margin-top: 0;
     }
+    #desktop-nav{
+        height: 9vh;
+        margin-top: 10px;
+    }
+    #desktop-nav li{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -69,7 +76,7 @@
         left: 26%;
     }
     .nav{
-        height: 12vh;
+        height: 10vh;
     }
     #desktop-nav{
         display: none;
@@ -79,6 +86,7 @@
     }
     #hamburger-nav{
         display: flex;
+        height: 10vh;
     }
     #experience, .experience-details-container{
         margin-top: 2rem;
@@ -172,12 +180,13 @@
     }
     .section__pic-container img{
         width: auto;
-        height: 25vh;
+        height: 30vh;
         margin-left: -50px;
+        margin-bottom: 1rem;
     }
     .section__pic-container{
         width: 100vw;
-        height: 26vw;
+        height: 18vh;
         justify-content: center;
     }
     .section__text{
@@ -191,5 +200,8 @@
     }
     .text-container{
         text-align: justify;
+    }
+    .footer nav{
+        height: 20vh;
     }
 }
