@@ -194,4 +194,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselImages = document.querySelector(".carousel-images");
+  const modal = document.getElementById("popup-modal");
+  const modalImg = document.getElementById("popup-image");
+  const closeBtn = document.querySelector(".close");
+
+  // Open modal when an image is clicked
+  carouselImages.addEventListener("click", function (event) {
+      if (event.target.tagName === "IMG") {
+          modal.style.display = "flex"; // Show modal
+          modalImg.src = event.target.src; // Set image source
+      }
+  });
+
+  // Close modal when clicking the close button
+  closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+          modal.style.display = "none";
+      }
+  });
+});
+
+
 
