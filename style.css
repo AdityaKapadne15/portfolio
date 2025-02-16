@@ -68,7 +68,6 @@ p {
 
 /*Splash screen*/
 
-
 .intro{
     position: fixed;
     z-index: 1;
@@ -78,12 +77,13 @@ p {
     height: 100vh;
     background-color: #161616;
     transition: 1s;
+    z-index: 2;
 }
 
 .logo-header{
     position: absolute;
     justify-content: center;
-    top:45%;
+    top:60%;
     left: 43%;
     transform: translate(-50% -50%);
     color: white;
@@ -110,6 +110,7 @@ p {
     transition: ease-in-out 0.5s;
 }
 
+
 /*Transition*/
 
 a, .btn{
@@ -125,7 +126,7 @@ nav, .nav-links{
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 10vh;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.07));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -424,7 +425,7 @@ section{
 }
 
 .about-containers p{
-    color: rgb(74, 74, 74);
+    color: rgb(56, 56, 56);
 }
 
 .about-details-container{
@@ -440,15 +441,15 @@ section{
     border-radius: 2rem;
 }
 
-.text-container{
+.text-container p{
     text-align: justify;
+    color: whitesmoke;
 }
 
 .arrow{
-    position:absolute;
-    right: -5rem;
-    bottom: -1rem;
-
+    position:absolute !important;
+    right: -5rem !important;
+    bottom: -1rem !important;
 }
 
 
@@ -458,7 +459,10 @@ section{
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163 , 163, 163);
+    border-color: rgb(163 , 163, 163); 
+    box-shadow: 
+    0 0 60px rgba(221, 160, 221, 0.5), /* Lavender */
+    0 0 80px rgba(138, 43, 226, 0.4); /* Violet */
 }
 
 .section-container{
@@ -479,7 +483,7 @@ section{
 }
 
 .experience-sub-title{
-    color: rgb(85, 85, 85);
+    color: rgb(56, 56, 56);
     text-align: center;
     font-weight: 600;
     font-size: 1.5rem;
@@ -531,6 +535,12 @@ article .icon{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+.project-container{
+    transform: scale(0.9); /* Shrinks to 85% of the original size */
+    transform-origin: center; /* Keeps it centered */
+    margin-top: -50px;
+}
+
 .project-img{
     border-radius: 2rem;
     width: 90%;
@@ -539,7 +549,7 @@ article .icon{
 
 .project-title{
     margin: 1rem;
-    font-size: medium;
+    font-size: 1.4rem;
     color: whitesmoke;
 }
 .project-btn{
@@ -558,6 +568,7 @@ article .icon{
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    padding-bottom: 2rem;
 }
 
 .contact-info-upper-container{
@@ -569,6 +580,9 @@ article .icon{
     background: rgb(253, 253, 253);
     margin: 2rem auto;
     padding: 0.5rem;
+    box-shadow: 
+    0 0 60px rgba(221, 160, 221, 0.5), /* Lavender */
+    0 0 80px rgba(138, 43, 226, 0.4); /* Violet */
 }
 
 .contact-info-container{
@@ -581,7 +595,7 @@ article .icon{
 }
 
 .contact-info-container a{
-    color: rgb(74 , 74, 74);
+    color: rgb(56, 56, 56);
 }
 
 .contact-info-container a:hover{
@@ -620,4 +634,84 @@ footer{
 footer p{
     text-align: center;
     padding-top: 20px;
+}
+
+/* Achievements */
+
+#achievements{
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    /* background-color: #2b0c46; */
+    box-shadow: 
+    0 0 100px rgba(221, 160, 221, 0.5), /* Lavender */
+    0 0 120px rgba(138, 43, 226, 0.4); /* Violet */
+}
+
+.carousel-wrapper {
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 20px 0;
+    z-index: 1;
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(84, 84, 84, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 24px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(175, 54, 189, 0.5);
+    transition: 200ms;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: white;
 }

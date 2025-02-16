@@ -81,7 +81,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 })
 
 function updateExperience() {
-  const startDate = new Date(2022, 2); // Feb 2022
+  const startDate = new Date(2022, 1); // Feb 2022
   const currentDate = new Date();
 
   let experienceYears = currentDate.getFullYear() - startDate.getFullYear();
@@ -110,7 +110,88 @@ function updateExperience() {
 // Run the function when the page loads
 document.addEventListener("DOMContentLoaded", updateExperience);
 
+document.addEventListener("DOMContentLoaded", function () {
+  // ✅ List of image filenames (Fetch dynamically if using backend)
+  const imagePaths = [
+    "./assets/cert_imgs/top_talent_2024.png",
+    "./assets/cert_imgs/Bravo_Award.png",
+    "./assets/cert_imgs/call_for_code_2023.png",
+    "./assets/cert_imgs/AZ-900_certification.jpg",
+    "./assets/cert_imgs/aws_udemy.png",
+    "./assets/cert_imgs/HTML_udemy.png",
+    "./assets/cert_imgs/CSS_udemy.png",
+    "./assets/cert_imgs/TS_udemy.png",
+    "./assets/cert_imgs/nodejs_udemy.png",
+    "./assets/cert_imgs/git_udemy.png",
+    "./assets/cert_imgs/docker_udemy.png",
+    "./assets/cert_imgs/devops_udemy.png",
+    "./assets/cert_imgs/powershell_udemy.png",
+    "./assets/cert_imgs/mongo_udemy.png",
+    "./assets/cert_imgs/IBM_instana.png",
+    "./assets/cert_imgs/IBM_instana_Intermediate.png"
+  ];
 
+  const imageFolder = "./assets/cert_imgs"; // Folder path
+  const carouselImages = document.querySelector(".carousel-images");
+  const indicatorsContainer = document.querySelector(".indicators");
+
+  let currentIndex = 0;
+  
+  // ✅ Dynamically create image elements
+  imagePaths.forEach((image, index) => {
+      const img = document.createElement("img");
+      img.src = image;
+      img.classList.add("carousel-item");
+      img.alt = `Certificate ${index + 1}`;
+      carouselImages.appendChild(img);
+
+      // Create indicators (dots)
+      const dot = document.createElement("div");
+      dot.classList.add("indicator");
+      dot.addEventListener("click", () => goToSlide(index));
+      indicatorsContainer.appendChild(dot);
+  });
+
+  const totalSlides = imagePaths.length;
+  const indicators = document.querySelectorAll(".indicator");
+  updateIndicators();
+
+  function updateIndicators() {
+      indicators.forEach((dot, index) => {
+          dot.classList.toggle("active", index === currentIndex);
+      });
+  }
+
+  function goToSlide(index) {
+      currentIndex = index;
+      updateCarousel();
+  }
+
+  function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+  }
+
+  function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+  }
+
+  function updateCarousel() {
+      const newTransformValue = `translateX(-${currentIndex * 100}%)`;
+      document.querySelector(".carousel-images").style.transform = newTransformValue;
+      updateIndicators();
+  }
+
+  // Auto-slide feature (Optional)
+  // let autoSlide = setInterval(nextSlide, 4000);
+  // document.querySelector(".carousel").addEventListener("mouseover", () => clearInterval(autoSlide));
+  // document.querySelector(".carousel").addEventListener("mouseleave", () => autoSlide = setInterval(nextSlide, 4000));
+
+  // Attach event listeners to buttons
+  document.querySelector(".prev").addEventListener("click", prevSlide);
+  document.querySelector(".next").addEventListener("click", nextSlide);
+});
 
 
 

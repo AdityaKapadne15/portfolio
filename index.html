@@ -15,9 +15,10 @@
 <body>
     <div class="intro">
         <h1 class="logo-header">
-            <span class="logoint">WELCOME</span>
+            <span class="logoint">Welcome to <span style="color: rgb(111, 59, 160); font-weight: bolder; font-family:'Courier New', Courier, monospace;">Aditya's Portfolio</span></span>
             <span class="logoint"></span>
         </h1>
+        <!-- <img class="logoint" src="./assets/welcome-gig-animate-unscreen.gif" alt="welcome"> -->
     </div>
     <nav id="desktop-nav">
         <!-- <div class="logo">Aditya Kapadne</div> -->
@@ -25,6 +26,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -42,6 +44,7 @@
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
                     <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -78,21 +81,22 @@
             </div> -->
             <div class="about-details-container">
                 <div class="about-containers">
+                    <div class="text-container">
+                        <p>Hello, I'm a dedicated Senior Software Engineer with <span id="experience-time">1.5+ years</span> years of IT experience, specializing in React frontend development and dashboard solutions. Developed a responsive banking application using React.js with Micro Frontend Architecture and optimized performance with Context API and REST API integration. <br>Played a key role in Persistent Responsive Dashboards (PRD) development using Angular, enhancing UI/UX, accessibility, and dynamic data binding. Built ETL pipelines, worked with Oracle, PostgreSQL, and deployed Docker containers on Kubernetes. Integrated Generative AI (IBM Watson) into PRD and Instana, creating diverse BI dashboards for Banking, ITSM, and APM.</p>
+                        <!-- <p>Hello, I'm a dedicated Senior Software Engineer with a passion for full-stack solutions and data analytics. Over the past <span id="experience-time">1.5+ years</span>, I have embraced the roles of a data analyst and full-stack developer. My journey in this dynamic field has allowed me to explore complex datasets, extract meaningful insights, and create robust applications that bridge the gap between raw data and user-friendly interfaces. With a keen eye for detail and a knack for problem-solving, I thrive in the fast-paced environment of software engineering, to meet the demands of modern technology.</p> -->
+                    </div>
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon"
+                        <img src="./assets/experience_color.png" alt="Experience icon"
                         class="icon">
                         <h3>Experience</h3>
                         <p>Experience: <span id="experience-time">1.5+ years</span> <br/>Data Analyst & Frontend Developer<br/><b>Persistent Systems Limited</b></p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon"
+                        <img src="./assets/education_color.png" alt="Education icon"
                         class="icon">
                         <h3>Education</h3>
                         <p>Bachelors of Engineering in<br/>Electronics & Telecommunication<br/><b>Savitribai Phule Pune University</b></p>
                     </div>
-                </div>
-                <div class="text-container">
-                    <p>Hello, I'm a dedicated Senior Software Engineer with a passion for full-stack solutions and data analytics. Over the past <span id="experience-time">1.5+ years</span>, I have embraced the roles of a data analyst and full-stack developer. My journey in this dynamic field has allowed me to explore complex datasets, extract meaningful insights, and create robust applications that bridge the gap between raw data and user-friendly interfaces. With a keen eye for detail and a knack for problem-solving, I thrive in the fast-paced environment of software engineering, to meet the demands of modern technology.</p>
                 </div>
             </div>
         </div>
@@ -110,7 +114,23 @@
                     <h2 class="experience-sub-title">Frontend & Backend Developement</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-react-native-480.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>React.js</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/icons8-angularjs-480.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/icons8-html-5-480.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>HTML</h3>
@@ -118,15 +138,40 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-css-480.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>CSS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
+                        
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-tailwind-css-480.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Tailwind</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/icons8-typescript-480.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/icons8-nodejs-480.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>NodeJS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/icons8-javascript-480.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>JavaScript</h3>
@@ -134,15 +179,23 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/MongoDB_icon.webp" alt="Experience icon"
                             class="icon">
                             <div>
-                                <h3>React.js</h3>
-                                <p>Basics</p>
+                                <h3>MongoDB</h3>
+                                <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/UI_UX_logo.jpg" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>UI UX</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/icons8-python-480.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>Python</h3>
@@ -150,7 +203,7 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-java-480.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>Java</h3>
@@ -158,7 +211,7 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-api-96.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>RestAPI</h3>
@@ -166,11 +219,11 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-git-480.png" alt="Experience icon"
                             class="icon">
                             <div>
-                                <h3>GitHub</h3>
-                                <p>Intermediate</p>
+                                <h3>Git & GitHub</h3>
+                                <p>Experienced</p>
                             </div>
                         </article>
                     </div>
@@ -179,7 +232,7 @@
                     <h2 class="experience-sub-title">Data Analytics</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/data_visual.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>Dashboard Creation</h3>
@@ -187,7 +240,7 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/dash_creation.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>Data Visualization</h3>
@@ -195,15 +248,23 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-power-bi-144.png" alt="Experience icon"
                             class="icon">
                             <div>
-                                <h3>Microsoft Excel</h3>
+                                <h3>Power BI</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-splunk-480.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Splunk</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/icons8-aws-480.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>AWS</h3>
@@ -211,7 +272,23 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/icons8-azure-480.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Azure</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/excel.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Microsoft Excel</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/docker.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>Docker</h3>
@@ -219,10 +296,34 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            <img src="./assets/icons/kubernetes.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Kubernetes</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/sql.png" alt="Experience icon"
                             class="icon">
                             <div>
                                 <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/icons8-linux-96.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Linux</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons/redhat-icon.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>RHEL</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
@@ -230,6 +331,24 @@
                 </div>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon"
+        class="icon arrow" onclick="location.href='./#achievements'">
+    </section>
+    <section id="achievements">
+        <div class="title-bar">
+            <p class="section__text__p1">Discover My</p>
+            <h1 class="title">Achievements</h1>
+        </div>  
+            <!-- Carousel Container -->
+            <div class="carousel">
+                <button class="prev">&#10094;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-images"></div>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+            <!-- Indicators -->
+            <div class="indicators"></div>
         <img src="./assets/arrow.png" alt="Arrow icon"
         class="icon arrow" onclick="location.href='./#projects'">
     </section>
@@ -239,10 +358,10 @@
             <h1 class="title">Projects</h1>
         </div>
         <div class="experience-details-container project-tabs">
-            <div class="about-containers">
-            <div class="details-container color-container">
+            <div class="about-containers project-container">
+            <div class="details-container color-container project-container">
                 <div class="article-container">
-                    <img src="./assets/hospital_bg.png" alt="Hospital Management System"
+                    <img src="./assets/hospital_animation.gif" alt="Hospital Management System"
                     class="project-img">
                 </div>
                 <h2 class="experience-sub-title project-title">Hospital Management System
@@ -256,9 +375,9 @@
                     </button>
                 </div>
             </div>
-            <div class="details-container color-container">
+            <div class="details-container color-container project-container">
                 <div class="article-container">
-                    <img src="./assets/movie_bg.png" alt="Movie Recommendation App"
+                    <img src="./assets/movie_animation.gif" alt="Movie Recommendation App"
                     class="project-img">
                 </div>
                 <h2 class="experience-sub-title project-title">Movie Recommendation App
@@ -272,22 +391,6 @@
                     </button>
                 </div>
             </div>
-            <!-- <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-3.png" alt="Project 1"
-                    class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three
-                </h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AdityaKapadne15'" target="_blank">
-                    GitHub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AdityaKapadne15'" target="_blank">
-                    Live Demo
-                    </button>
-                </div>
-            </div> -->
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon"
@@ -300,12 +403,12 @@
         </div>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email Icon"
+                <img src="./assets/email_color.png" alt="Email Icon"
                 class="icon contact-icon email-icon">
                 <p><a href="mailto:adityakapadne149@gmail.com" target=”_blank”>adityakapadne149@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin_dark.png" alt="linkedin Icon"
+                <img src="./assets/linkedin_color.png" alt="linkedin Icon"
                 class="icon contact-icon">
                 <p><a href="https://www.linkedin.com/in/aditya-kapadne-301b38219" target=”_blank”>LinkedIn</a></p>
             </div>
@@ -318,6 +421,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <img src="./assets/arrow_up.png" alt="Arrow icon"

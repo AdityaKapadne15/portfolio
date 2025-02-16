@@ -21,6 +21,9 @@
     .logo{
         font-size: 3rem;
     }
+    .nav{
+        height: 10vh;
+    }
     #profile{
         height: 83vh;
         margin-bottom: 6rem;
@@ -84,9 +87,26 @@
     .logo{
         font-size: 2.5rem;
     }
+    .logo-header{
+        top:70%;
+        left: 25%;
+    }
     #hamburger-nav{
         display: flex;
         height: 10vh;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+        height: 30vh;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    #contact, footer{
+        height: 40vh;
     }
     #experience, .experience-details-container{
         margin-top: 2rem;
@@ -118,6 +138,38 @@
     }
     .about-containers{
         margin-top: 0;
+    }
+    .carousel {
+        position: relative;
+        width: 90%;
+    }
+    .carousel-wrapper {
+        width: 80%;
+        overflow: hidden;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(84, 84, 84, 0.5);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 24px;
+        z-index: 1;
+    } 
+    .prev { left: 8px; }
+    .next { right: 8px; }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: gray;
+        margin: 0 5px;
+        border-radius: 50%;
+        cursor: pointer;
     }
 }
 
@@ -170,6 +222,10 @@
     .logo{
         font-size: 1.5rem;
     }
+    .logo-header{
+        top:70%;
+        left: 20%;
+    }
     .nav{
         height: 9vh;
     }
@@ -203,5 +259,37 @@
     }
     .footer nav{
         height: 20vh;
+    }
+    .carousel {
+        position: relative;
+        width: 100%;
+    }
+    .carousel-wrapper {
+        width: 70%;
+        overflow: hidden;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(84, 84, 84, 0.5);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 24px;
+        z-index: 1;
+    } 
+    .prev { left: 4px; }
+    .next { right: 4px; }
+
+    .indicator {
+        width: 6px;
+        height: 6px;
+        background-color: gray;
+        margin: 0 5px;
+        border-radius: 50%;
+        cursor: pointer;
     }
 }
