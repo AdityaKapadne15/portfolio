@@ -260,6 +260,9 @@
     .footer nav{
         height: 20vh;
     }
+    .footer p{
+        font-size: small;
+    }
     .carousel {
         position: relative;
         width: 100%;
