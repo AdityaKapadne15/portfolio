@@ -13,13 +13,36 @@
     <link rel="stylesheet" href="mediaquries.css">
 </head>
 <body>
-    <div class="intro">
+    <!-- <div class="intro">
         <h1 class="logo-header">
             <span class="logoint">Welcome to <span style="color: rgb(111, 59, 160); font-weight: bolder; font-family:'Courier New', Courier, monospace;">Aditya's Portfolio</span></span>
             <span class="logoint"></span>
         </h1>
-        <!-- <img class="logoint" src="./assets/welcome-gig-animate-unscreen.gif" alt="welcome"> -->
+    </div> -->
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logoint" id="changing-text">Hola</span>
+        </h1>
     </div>
+    <script>
+        const words = ["Hola", "Bonjour", "Ciao",, "नमस्ते", "こんにちは", "Привет", "안녕하세요", "مرحبا"];
+        let index = 0;
+    
+        function changeText() {
+            const textElement = document.getElementById("changing-text");
+            textElement.style.opacity = "0"; 
+    
+            setTimeout(() => {
+                index = (index + 1) % words.length;
+                textElement.textContent = words[index];
+                textElement.style.opacity = "1";
+            }, 50);
+        }
+    
+        setInterval(changeText, 220); // Adjusted to match transition
+    </script>
+    
+    
     <nav id="desktop-nav">
         <!-- <div class="logo">Aditya Kapadne</div> -->
         <div>
@@ -82,7 +105,7 @@
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="text-container">
-                        <p>Hello, I'm a dedicated Senior Software Engineer with <span id="experience-time">1.5+ years</span> years of IT experience, specializing in React frontend development and dashboard solutions. Developed a responsive banking application using React.js with Micro Frontend Architecture and optimized performance with Context API and REST API integration. <br>Played a key role in Persistent Responsive Dashboards (PRD) development using Angular, enhancing UI/UX, accessibility, and dynamic data binding. Built ETL pipelines, worked with Oracle, PostgreSQL, and deployed Docker containers on Kubernetes. Integrated Generative AI (IBM Watson) into PRD and Instana, creating diverse BI dashboards for Banking, ITSM, and APM.</p>
+                        <p>Hello, I'm a Sr. Software Engineer with <span id="experience-time">1.5+ years</span> years of IT experience, specializing in <span style="color: rgb(161, 61, 255); font-weight: bolder;">Frontend Web Development and BI Dashboarding Solutions</span>. Developed a responsive banking application using React.js with Micro Frontend Architecture and optimized performance with Context API and REST API integration. <br>Played a <span style="color: rgb(161, 61, 255); font-weight: bolder;">key role in Persistent Responsive Dashboards (PRD) development using Angular</span>, enhancing UI/UX, accessibility, and dynamic data binding. Built ETL pipelines, worked with Oracle, PostgreSQL, and deployed Docker containers on Kubernetes. Integrated Generative AI (IBM Watson) into PRD and Instana, creating diverse BI dashboards for Banking, ITSM, and APM.</p>
                         <!-- <p>Hello, I'm a dedicated Senior Software Engineer with a passion for full-stack solutions and data analytics. Over the past <span id="experience-time">1.5+ years</span>, I have embraced the roles of a data analyst and full-stack developer. My journey in this dynamic field has allowed me to explore complex datasets, extract meaningful insights, and create robust applications that bridge the gap between raw data and user-friendly interfaces. With a keen eye for detail and a knack for problem-solving, I thrive in the fast-paced environment of software engineering, to meet the demands of modern technology.</p> -->
                     </div>
                     <div class="details-container">

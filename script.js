@@ -81,7 +81,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 })
 
 function updateExperience() {
-  const startDate = new Date(2022, 1); // Feb 2022
+  const startDate = new Date(2022, 2); // Feb 2022
   const currentDate = new Date();
 
   let experienceYears = currentDate.getFullYear() - startDate.getFullYear();
@@ -117,6 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "./assets/cert_imgs/Bravo_Award.png",
     "./assets/cert_imgs/call_for_code_2023.png",
     "./assets/cert_imgs/AZ-900_certification.jpg",
+    "./assets/cert_imgs/IBM_instana.png",
+    "./assets/cert_imgs/IBM_instana_Intermediate.png",
     "./assets/cert_imgs/aws_udemy.png",
     "./assets/cert_imgs/HTML_udemy.png",
     "./assets/cert_imgs/CSS_udemy.png",
@@ -126,9 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "./assets/cert_imgs/docker_udemy.png",
     "./assets/cert_imgs/devops_udemy.png",
     "./assets/cert_imgs/powershell_udemy.png",
-    "./assets/cert_imgs/mongo_udemy.png",
-    "./assets/cert_imgs/IBM_instana.png",
-    "./assets/cert_imgs/IBM_instana_Intermediate.png"
+    "./assets/cert_imgs/mongo_udemy.png"
   ];
 
   const imageFolder = "./assets/cert_imgs"; // Folder path

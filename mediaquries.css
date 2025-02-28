@@ -91,6 +91,10 @@
         top:70%;
         left: 25%;
     }
+    .logoint {
+        bottom: 120px !important;
+        left: 100px !important;
+    }
     #hamburger-nav{
         display: flex;
         height: 10vh;
@@ -225,6 +229,10 @@
     .logo-header{
         top:70%;
         left: 20%;
+    }
+    .logoint {
+        bottom: 120px !important;
+        left: 40px;
     }
     .nav{
         height: 9vh;
