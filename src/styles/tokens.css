@@ -1,0 +1,126 @@
+:root {
+  color-scheme: dark;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --color-background: #080b18;
+  --color-surface: #111a3a;
+  --color-surface-raised: #151f43;
+  --color-surface-soft: #0d1329;
+  --color-text: #fafafd;
+  --color-text-muted: #b8bed8;
+  --color-text-dim: #7f89ad;
+  --color-accent: #5b65dc;
+  --color-accent-bright: #858dff;
+  --color-border: #29345f;
+  --color-border-soft: rgba(146, 157, 220, 0.14);
+  --color-on-accent: #fafafd;
+  --color-page-glow: rgba(91, 101, 220, 0.1);
+  --color-grid-line: rgba(133, 141, 255, 0.025);
+  --color-journey-background: #070a16;
+  --color-journey-surface: #080b18;
+  --color-journey-glow: rgba(91, 101, 220, 0.1);
+  --color-panel-background: rgba(17, 26, 58, 0.62);
+  --color-panel-hover: rgba(21, 31, 67, 0.82);
+  --color-panel-gradient: linear-gradient(
+    135deg,
+    rgba(21, 31, 67, 0.68),
+    rgba(8, 11, 24, 0.65)
+  );
+  --color-panel-gradient-soft: linear-gradient(
+    145deg,
+    rgba(21, 31, 67, 0.85),
+    rgba(13, 19, 41, 0.84)
+  );
+  --color-glass-surface: rgba(18, 27, 57, 0.56);
+  --color-glass-surface-raised: rgba(22, 32, 68, 0.7);
+  --color-glass-surface-hover: rgba(25, 36, 76, 0.78);
+  --color-glass-border: rgba(166, 177, 255, 0.23);
+  --color-glass-highlight: rgba(250, 250, 253, 0.11);
+  --color-glass-fallback: rgba(16, 24, 52, 0.96);
+  --color-panel-overlay: rgba(8, 11, 24, 0.84);
+  --color-globe-control: rgba(8, 11, 24, 0.78);
+  --color-menu-background: #0d1329;
+  --color-menu-shadow: rgba(0, 0, 0, 0.3);
+  --color-accent-wash: rgba(91, 101, 220, 0.1);
+  --color-accent-wash-strong: rgba(91, 101, 220, 0.18);
+  --color-accent-border: rgba(133, 141, 255, 0.25);
+  --color-accent-border-strong: rgba(133, 141, 255, 0.72);
+  --color-accent-glow: rgba(133, 141, 255, 0.65);
+  --color-tile-border: rgba(146, 157, 220, 0.18);
+  --color-tile-gradient: linear-gradient(
+    145deg,
+    rgba(33, 45, 93, 0.78),
+    rgba(13, 19, 41, 0.9)
+  );
+  --color-tile-icon-background: rgba(8, 11, 24, 0.58);
+  --color-tile-highlight: rgba(250, 250, 253, 0.06);
+  --color-shadow: rgba(3, 5, 16, 0.35);
+  --color-error-background: rgba(8, 11, 24, 0.9);
+  --color-error-text: #ffb9c6;
+  --font-mono: "IBM Plex Mono", "Cascadia Code", Consolas, monospace;
+  --content-width: 1180px;
+  --page-gutter: clamp(1.25rem, 5vw, 5.5rem);
+  --header-height: 88px;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --color-background: #f5f6fc;
+  --color-surface: #ffffff;
+  --color-surface-raised: #e9edfc;
+  --color-surface-soft: #edf0f9;
+  --color-text: #171b2e;
+  --color-text-muted: #4f5876;
+  --color-text-dim: #626d8e;
+  --color-accent: #424dbf;
+  --color-accent-bright: #4b56c7;
+  --color-border: #cbd2e7;
+  --color-border-soft: rgba(57, 69, 124, 0.16);
+  --color-on-accent: #ffffff;
+  --color-page-glow: rgba(91, 101, 220, 0.08);
+  --color-grid-line: rgba(62, 72, 126, 0.045);
+  --color-journey-background: #e9edfb;
+  --color-journey-surface: #f0f2fc;
+  --color-journey-glow: rgba(91, 101, 220, 0.12);
+  --color-panel-background: rgba(255, 255, 255, 0.84);
+  --color-panel-hover: rgba(255, 255, 255, 0.98);
+  --color-panel-gradient: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(235, 239, 251, 0.94)
+  );
+  --color-panel-gradient-soft: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(235, 239, 251, 0.95)
+  );
+  --color-glass-surface: rgba(255, 255, 255, 0.68);
+  --color-glass-surface-raised: rgba(247, 249, 255, 0.78);
+  --color-glass-surface-hover: rgba(255, 255, 255, 0.88);
+  --color-glass-border: rgba(66, 77, 191, 0.2);
+  --color-glass-highlight: rgba(255, 255, 255, 0.82);
+  --color-glass-fallback: rgba(250, 251, 255, 0.98);
+  --color-panel-overlay: rgba(249, 250, 255, 0.92);
+  --color-globe-control: rgba(245, 246, 252, 0.9);
+  --color-menu-background: #ffffff;
+  --color-menu-shadow: rgba(27, 35, 75, 0.14);
+  --color-accent-wash: rgba(66, 77, 191, 0.07);
+  --color-accent-wash-strong: rgba(66, 77, 191, 0.13);
+  --color-accent-border: rgba(66, 77, 191, 0.22);
+  --color-accent-border-strong: rgba(66, 77, 191, 0.52);
+  --color-accent-glow: rgba(66, 77, 191, 0.28);
+  --color-tile-border: rgba(57, 69, 124, 0.15);
+  --color-tile-gradient: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(232, 237, 251, 0.96)
+  );
+  --color-tile-icon-background: rgba(231, 236, 250, 0.9);
+  --color-tile-highlight: rgba(255, 255, 255, 0.8);
+  --color-shadow: rgba(40, 49, 91, 0.14);
+  --color-error-background: rgba(255, 241, 244, 0.97);
+  --color-error-text: #9c2542;
+}
